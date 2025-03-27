@@ -7,7 +7,9 @@ import crypto from 'crypto';
 import dotenv from 'dotenv';
 import nodemailer from 'nodemailer';
 
-dotenv.config();
+dotenv.config({
+    path: './.env'
+})
 
 // Initialize Razorpay with your key and secret
 const razorpay = new Razorpay({
