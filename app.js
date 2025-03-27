@@ -21,7 +21,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: 'https://easylearn-wine.vercel.app/',
+  origin: 'https://easylearn-wine.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
