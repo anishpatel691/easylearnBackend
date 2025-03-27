@@ -21,9 +21,10 @@ const app = express();
 
 
 app.use(cors({
-  origin:process.env.CORS_ORIGIN || '*',
-  credentials:true
-}))
+  origin: 'https://easylearn-wine.vercel.app/',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 
 // Middleware
